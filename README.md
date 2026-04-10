@@ -44,5 +44,7 @@ The system uses feedback control:
 
 ## Contact
 
-- Email: a.mohamed822000@gmail.com  
-- LinkedIn: https://www.linkedin.com/in/abdelrahman-mohamed-a1956b247/
+If you have any questions, feel free to contact me:
+- **Phone:** +201028325749
+- **Email:** a.mohamed822000@gmail.com
+- **LinkedIn:** [Abdelrahman Mohamed Hamad](https://www.linkedin.com/in/abdelrahman-mohamed-a1956b247/)
