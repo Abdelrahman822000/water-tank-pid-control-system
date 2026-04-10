@@ -38,9 +38,9 @@ The system uses feedback control:
 2. Controller compares with desired setpoint  
 3. PID adjusts system input to minimize error  
 
-## Demo / Screenshots
+## Screenshots
 
-(Add your PPT images here 👇)
+
 
 ## Contact
 
