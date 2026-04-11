@@ -4,6 +4,34 @@ A PID-based control system for regulating water level and temperature using **MA
 
 ---
 
+## 📁 Project Structure
+
+```
+
+water-tank-pid-control-system/
+│
+├── src/
+│   ├── Arduino Code Without PID/
+│   │   └── Water_Tank_Control_System_Without_PID.ino
+│   │
+│   ├── MATLAB and Simulink with PID/
+│   │   ├── Water_Level_Control.m
+│   │   ├── Water_Level_Control.slx
+│   │   ├── Heat_Control.m
+│   │   └── Heat_Control.slx
+│
+├── media/
+│   ├── images
+│   ├── results
+│
+├── Presentation/
+│   └── project presentation files
+│
+└── README.md
+
+````
+
+
 ## Project Overview
 
 This project implements a real-time feedback control system to maintain stable **water level** and **temperature** in a tank.
@@ -77,11 +105,11 @@ The water level loop uses:
 
 The water level plant is modeled as:
 
-G(s) = R / (R * A * s + 1)
+$$G(s) =\frac{R}{(R A s + 1)}$$
 
 Where:
-- R = 0.2778
-- A = 198
+- $$R = 0.2778$$
+- $$A = 198$$
 
 ### Heat Control
 
@@ -91,11 +119,11 @@ The temperature loop uses:
 
 The thermal plant is modeled as:
 
-G(s) = RT / (RT * C * s + 1)
+$$G(s) = \frac{R_{T}}{(R_{T} C s + 1)}$$
 
 Where:
-- RT = 1.339
-- C = 10460
+- $$R_{T} = 1.339$$
+- $$C = 10460$$
 
 ---
 
@@ -105,19 +133,23 @@ Where:
 
 From `Water_Level_Control.m`:
 
-- \( K_p = 49.92 \)
-- \( K_i = 3.451 \)
-- \( K_d = 38.88 \)
-- \( N = 100 \)
+
+
+- $$K_{p} = 49.92$$
+- $$K_{i} = 3.451$$
+- $$K_{d} = 38.88$$
+- $$N = 100$$
+
+$$
 
 ### Temperature PID Parameters
 
 From `Heat_Control.m`:
 
-- \( K_p = 612.4 \)
-- \( K_i = 6.638 \)
-- \( K_d = 1837 \)
-- \( N = 100 \)
+- $$K_{p} = 612.4$$
+- $$K_{i} = 6.638$$
+- $$K_{d} = 1837$$
+- $$N = 100$$
 
 ---
 
@@ -170,7 +202,7 @@ If you open the Simulink file directly without running the corresponding MATLAB 
 ### Run Water Level Control
 
 ```matlab
-cd 'your/project/folder/path'
+cd 'src/MATLAB and Simulink with PID'
 Water_Level_Control
 open('Water_Level_Control.slx')
 ```
@@ -192,7 +224,7 @@ N  = 100;
 ### Run Heat Control
 
 ```matlab
-cd 'your/project/folder/path'
+cd 'src/MATLAB and Simulink with PID'
 Heat_Control
 open('Heat_Control.slx')
 ```
@@ -256,7 +288,6 @@ The Arduino stage was used for real-world testing after modeling and simulation 
 
 ## Screenshots
 
-Add here:
 - Water level Simulink model
 - Heat control Simulink model
 - Schematic diagram
