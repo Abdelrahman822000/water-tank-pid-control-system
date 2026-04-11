@@ -78,6 +78,7 @@ The water level loop uses:
 The water level plant is modeled as:
 
 G(s) = R / (R * A * s + 1)
+
 Where:
 - R = 0.2778
 - A = 198
