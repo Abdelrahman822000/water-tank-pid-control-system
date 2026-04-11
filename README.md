@@ -77,13 +77,10 @@ The water level loop uses:
 
 The water level plant is modeled as:
 
-\[
-G(s) = \frac{R}{R \cdot A \cdot s + 1}
-\]
-
+G(s) = R / (R * A * s + 1)
 Where:
-- \( R = 0.2778 \)
-- \( A = 198 \)
+- R = 0.2778
+- A = 198
 
 ### Heat Control
 
@@ -93,13 +90,11 @@ The temperature loop uses:
 
 The thermal plant is modeled as:
 
-\[
-G(s) = \frac{R_T}{R_T \cdot C \cdot s + 1}
-\]
+G(s) = RT / (RT * C * s + 1)
 
 Where:
-- \( C = 10460 \) to \( 10469 \, \text{kcal/°C} \) depending on the script/version used
-- \( R_T = 1.339 \, \text{s·°C/kcal} \)
+- RT = 1.339
+- C = 10460
 
 ---
 
